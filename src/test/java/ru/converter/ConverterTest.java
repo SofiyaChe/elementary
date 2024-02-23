@@ -13,6 +13,7 @@ class ConverterTest {
         float eps = 0.01f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
+
     @Test
     void whenConvert500RblThen5Euro() {
         float in = 500;
@@ -21,6 +22,7 @@ class ConverterTest {
         float eps = 0.01f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
+
     @Test
     void whenConvert750RblThen7Dot5Euro() {
         float in = 750;
@@ -47,6 +49,7 @@ class ConverterTest {
         float eps = 0.01f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
+
     @Test
     void whenConvert250RblThen2dot7777Dlr() {
         float in = 250;
