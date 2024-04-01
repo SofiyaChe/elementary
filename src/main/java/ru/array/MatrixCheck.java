@@ -3,7 +3,7 @@ package ru.array;
 public class MatrixCheck {
     public static boolean monoHorizontal(char[][] board, int row) {
         for (int j = 0; j < board[row].length; j++) {
-            if (board[row][8] != 'X') {
+            if (board[row][j] != 'X') {
                 return false;
             }
         }
