@@ -6,6 +6,7 @@ import static java.lang.Math.sqrt;
 public class Point {
     private int x;
     private int y;
+
     public Point(int first, int second) {
         this.x = first;
         this.y = second;
