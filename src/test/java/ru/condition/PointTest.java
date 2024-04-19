@@ -45,4 +45,18 @@ class PointTest {
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
 
+    @Test
+    void when3dots() {
+        double expected = 7.0711;
+        int x1 = 0;
+        int y1 = 0;
+        int z1 = 0;
+        int x2 = 3;
+        int y2 = 4;
+        int z2 = 5;
+        Point point1 = new Point(x1, y1, z1);
+        Point point2 = new Point(x2, y2, z2);
+        double out = point1.distance3d(point2);
+        assertThat(out).isEqualTo(expected, withPrecision(0.01));
+    }
 }
